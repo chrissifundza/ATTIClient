@@ -1,0 +1,304 @@
+.intro-bg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../Home/assets/img/course/intro.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+.intro-bg:after {
+	content: '';
+    background: rgba(6, 6, 6, 0.363);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 250px;
+	overflow: hidden;
+    
+}
+.intro-bg .title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+    
+}
+@media (max-width:300px){
+    .intro-bg{
+  
+        height: 200px;
+       
+    }
+    .intro-bg:after {
+    
+        height: 200px;
+       
+        
+    }
+    .intro-bg .title h3{
+       width: 100%;
+       padding: 10px;
+       text-align: center;
+       
+        
+    }  
+    .intro-bg .links{
+        text-align: center;
+    }
+  
+}
+.intro-bg .title .links .Inactive{
+    color: #151d70;
+}
+.intro-bg .title .links .Inactive:hover{
+    color: white;
+}
+.intro-bg .title .links .active{
+    color: white;
+}
+.intro-bg .title h3 .pathC{
+    color: white;
+    
+}
+.align-right{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+.align-right .form-group input{
+  width: 300px !important;
+}
+@media(max-width:768px){
+    .align-right{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+    .align-right .form-group input{
+        width: 100% !important;
+      }
+}
+.inputSearch{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.inputSearch input {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: 0;
+}
+.inputSearch button{
+  border: 1px solid rgb(224, 224, 224);
+  border-left: 0;
+  outline: 0; 
+  
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  
+}
+.imgCourse {
+    position: relative;
+    height: 80%;
+    width: 100%;
+}
+.imgCourse img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contCourse{
+    position: relative;
+    padding: 10px;
+    background-color: #151d70;
+    color: white;
+    height: 20%;
+    width: 100%;
+   
+}
+.contCourse h5{
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    width: 100%;
+    overflow: hidden;
+}
+.coureDetailImage{
+    position: relative;
+    height: 360px;
+    width: 100%;
+}
+.coureDetailImage img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.btn-group{
+margin-left: 15px;
+margin-top: 25px;
+margin-bottom: 25px;
+margin-right: 15px;
+}
+.btn-group button{
+    background: #fff;
+    color: rgb(71, 71, 71);
+    border: 0;
+    border-color: unset;
+    transition: .5s;
+}
+.btn-group button:hover{
+    background-color: transparent;
+    color: rgb(71, 71, 71);
+    border: 0;
+    outline: 0;
+  
+}
+.btn-group button.active{
+    background: rgb(21,29,112) !important;
+    background: linear-gradient(90deg, rgba(21,29,112,1) 35%, rgba(28,91,157,1) 100%) !important;
+    color: #fff;
+}
+.outcome{
+    margin-top: 25px;
+}
+.circleIcon{
+    height: 35px;
+    width: 35px;
+   
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgb(202, 202, 202);
+    color: #151d70;
+}
+ul{
+    list-style: none;
+}
+.Det li{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.Det li .pra{
+width: 95%;
+color: gray;
+}
+
+.instructor-profile2{
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+.m-0{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.instructor-profile2 img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.lectnames h6{
+    text-transform: uppercase;
+}
+.lectnames p{
+    color: gray;
+}
+
+.infoP{
+    color: gray;
+    position: relative;
+}
+.listDetails{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.secondD{
+padding-top: 10px;
+}
+.name-icon{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.name-icon .icon{
+    color: #151d70;
+}
+.applynow{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(21,29,112) !important;
+    background: linear-gradient(90deg, rgba(21,29,112,1) 35%, rgba(28,91,157,1) 100%) !important;
+    width: 100%;
+    color: white;
+}
+.applynow:hover{
+    background: rgb(31, 40, 134) !important;
+    background: linear-gradient(90deg, rgb(34, 43, 141) 35%, rgb(46, 110, 179) 100%) !important;
+    color: #fff;
+}
+.otherCourse h5{
+    margin-top: 70px;
+}
+
+.relatedCourses .row .courseImag{
+    width: 120px;
+    height: 90px;
+}
+.relatedCourses .row .courseImag img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.justify-content-space-between{ 
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+.justify-content-space-between .courseIn{
+    margin-left: 15px;
+    width: 170px;
+}
